@@ -1,6 +1,6 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'; // webpack for bundling and other packages
+import logo from './logo.svg'; 
+import './App.css'; // importing files
 
 class App extends React.Component {
   render() {

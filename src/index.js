@@ -1,13 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import React from 'react'; // webpack for bundling and other packages underneath the react. it is needed for all the dependencies.
+import ReactDOM from 'react-dom/client'; // import the virtual DOM from React, it is for websites. react native for mobles.
+import './index.css'; // ./ means in the same directory as the index.js 
+//import App from './App'; // if no type after the file, it is javascript by default. components are capitalized.
+import Hello from './Hello'; // first component
 import reportWebVitals from './reportWebVitals';
+import 'tachyons';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <Hello greetings={`Hello React Ninja`}/>
   </React.StrictMode>
 );
 
